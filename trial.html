@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navbars</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  padding: 40px;
+}
+
+/* Shared navbar style */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0f172a;
+  padding: 15px 40px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+/* Logo */
+.logo {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-links li:hover {
+  color: #38bdf8;
+}
+
+/* Button */
+.btn {
+  background: #22c1c3;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0ea5e9;
+}
+
+/* ---------- NAV 2 CUSTOM ---------- */
+.nav2 {
+  justify-content: space-between;
+}
+
+.nav2 .nav-links {
+  align-items: center;
+}
+
+/* ---------- NAV 3 CUSTOM ---------- */
+.nav3 {
+  justify-content: space-between;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar 1 -->
+  <nav class="navbar nav1">
+    <div class="logo">LOGOBAKERY</div>
+    <ul class="nav-links">
+      <li>Services</li>
+      <li>Projects</li>
+      <li>About</li>
+    </ul>
+    <button class="btn">Contact</button>
+  </nav>
+
+  <!-- Navbar 2 -->
+  <nav class="navbar nav2">
+    <ul class="nav-links">
+      <li>Services</li>
+      <li>Projects</li>
+      <li>About</li>
+      <button class="btn">Contact</button>
+    </ul>
+    <div class="logo">LOGOBAKERY</div>
+  </nav>
+
+  <!-- Navbar 3 -->
+  <nav class="navbar nav3">
+    <div class="logo">LOGOBAKERY</div>
+    <ul class="nav-links">
+      <li>Services</li>
+      <li>Projects</li>
+      <li>About</li>
+      <button class="btn">Contact</button>
+    </ul>
+  </nav>
+
+</body>
+</html>
