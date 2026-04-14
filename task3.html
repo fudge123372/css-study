@@ -1,48 +1,96 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .navbar{
-            background-color: aquamarine;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 0 0 20px;
-            border-radius: 6px;
-        }
-        .navbar a{
-            color: black;
-            text-decoration:none;
-            margin: 0 20px 0 0; 
-        }
-        .navbar .list{
-            list-style:none ;
-            display: flex;
-            gap: 30px;
-        }
-        .list li:last-child a {
+        .container {
+            background-color: rgb(12, 96, 206);
+            margin: 30px 20px;
+            border-radius: 20px;
             color: white;
-            background-color: black;
-            padding: 5px 10px;
-            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .container .nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container .nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container .nav .first {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .container .content {
+            display: flex;
+            justify-content: space-between
+        }
+        .container .content .text{
+            width:300px ;
+            margin: 50px 100px;
+        }
+        .container .content .image{
+            margin: 70px 20px;
+        }
+        .container .content .text p{
+            margin: 0 0 15px 30px;
+        }
+        .container .content .text button{
+            margin: 0 0 0 30px;
+            background-color: skyblue;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 13px;
+            border: none;
+
         }
     </style>
+
 </head>
+
 <body>
-    <div class="navbar">
-        <a href="">logobakery</a>
-        <ul class="list">
-            <li><a href="">services</a></li>
-            <li><a href="">projects</a></li>
-            <li><a href="">about</a></li>
-            <li><a href="">contact</a></li>           
-        </ul>
+    <div class="container">
+        <div class="nav">
+            <ul class="first">
+                <li><a href=""><i class="fa-solid fa-bars-staggered fa-xl" style="color: rgb(116, 192, 252);"></i></a>
+                </li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href=""></a>About</li>
+            </ul>
+            <ul class="second">
+                <li><a href="">contact us</a></li>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+                    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+                    crossorigin="anonymous" referrerpolicy="no-referrer" />
+            </ul>
+        </div>
+        <div class="content">
+            <div class="text">
+                <h1>Simple <br> web design</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut hic explicabo tenetur nemo repellat
+                    veniam inventore vitae ipsum ratione assumenda, id ullam suscipit, cupiditate perferendis, expedita
+                    incidunt et non! Excepturi.</p>
+                <a href=""><button>portfolio</button></a>
+            </div>
+            <div class="image">
+                <img src="eagle.jpg" alt="" height="200px" width="200px">
+            </div>
+        </div>
 
     </div>
 </body>
-</html>
 
+</html>
